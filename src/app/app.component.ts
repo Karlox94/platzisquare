@@ -14,12 +14,12 @@ export class AppComponent implements OnInit{
 
   ngOnInit(): void {
     this.shops = [
-      { active: true, name: 'Florería la Gardenia', distance: 1 },
-      { active: true, name: 'Donas la pasadita', distance: 3 },
-      { active: true, name: 'Veterinaria Huellitas Felices', distance: 1 },
-      { active: false, name: 'Sushi Suhiroll', distance: 1 },
-      { active: true, name: 'Hotel la Gracia', distance: 2 },
-      { active: false, name: 'Zapatería el Clavo', distance: 3 }
+      { active: true, name: 'Florería la Gardenia', distance: 10, close: 1, plan: 'free' },
+      { active: true, name: 'Donas la pasadita', distance: 25, close: 3, plan: 'premium' },
+      { active: true, name: 'Veterinaria Huellitas Felices', distance: 54, close: 1, plan: 'free' },
+      { active: false, name: 'Sushi Suhiroll', distance: 29, close: 1, plan: 'premium' },
+      { active: true, name: 'Hotel la Gracia', distance: 18, close: 2, plan: 'premium' },
+      { active: false, name: 'Zapatería el Clavo', distance: 5, close: 3, plan: 'free' }
     ]
   }
 }
