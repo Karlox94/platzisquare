@@ -5,12 +5,14 @@ import { AgmCoreModule } from '@agm/core';
 
 import { AppComponent } from './app.component';
 import { HighlightDirective } from './directives/highlight.directive';
+import { ClickCountDirective } from './directives/click-count.directive';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HighlightDirective
+    HighlightDirective,
+    ClickCountDirective
   ],
   imports: [
     BrowserModule,

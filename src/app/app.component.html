@@ -2,12 +2,14 @@
 <ul>
   <ng-container *ngFor="let shop of shops; let i = index" [ngSwitch]="shop.close">
     <!-- <li *ngIf="shop.active">{{shop.name}}</li> -->
-    <li [ngStyle]="{color: shop.active ? 'black' : 'gray'}" [ngClass]="{even: (i + 1) % 2 !== 0}">
-      {{shop.name}} -
-      <span *ngSwitchCase="1" [ngStyle]="{color: 'green'}">Muy cercano</span>
-      <span *ngSwitchCase="2" [ngStyle]="{color: 'blue'}">Cercano</span>
-      <span *ngSwitchCase="3" [ngStyle]="{color: 'red'}">Lejano</span>
-    </li>
+    <a>
+      <li click-count [ngStyle]="{color: shop.active ? 'black' : 'gray'}" [ngClass]="{even: (i + 1) % 2 !== 0}" [highlight]='shop.plan'>
+        {{shop.name}} -
+        <span *ngSwitchCase="1" [ngStyle]="{color: 'green'}">Muy cercano</span>
+        <span *ngSwitchCase="2" [ngStyle]="{color: 'blue'}">Cercano</span>
+        <span *ngSwitchCase="3" [ngStyle]="{color: 'red'}">Lejano</span>
+      </li>
+    </a>
   </ng-container>
 </ul>
 
